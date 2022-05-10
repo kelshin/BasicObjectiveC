@@ -46,9 +46,13 @@ NSInteger getMenuInput(NSString *prompt){
       NSString *singleCharSubString = [menuChoice substringWithRange:NSMakeRange(0, 1)];
       // change value to NSInteger
       NSInteger picked = [singleCharSubString integerValue];
-      if (picked >= 1 || picked <= 9) {
+      if (picked >= 1 && picked <= 9) {
         return picked;
+      } else {
+        NSLog(@"Please enter a valid number");
       }
+    } else {
+      NSLog(@"Please enter a valid number");
     }
   }
 }
@@ -56,7 +60,7 @@ NSInteger getMenuInput(NSString *prompt){
 int main(int argc, const char * argv[]) {
   @autoreleasepool {
     while (true) {
-      NSString *input = getUserInput(@"Enter your string: ");
+      NSString *input = getUserInput(@"Enter your string: (Enter \"q\" to quit)");
       if ([input  isEqual: @"q"]) {
         break;
       } else {

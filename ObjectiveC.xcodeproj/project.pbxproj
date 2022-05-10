@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		649B377E2829ADA600D5F21B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 649B377D2829ADA600D5F21B /* main.m */; };
 		649B378B2829B8E200D5F21B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 649B378A2829B8E200D5F21B /* main.m */; };
+		649B3797282AFE9100D5F21B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 649B3796282AFE9100D5F21B /* main.m */; };
+		649B37A0282B126C00D5F21B /* Box.m in Sources */ = {isa = PBXBuildFile; fileRef = 649B379F282B126C00D5F21B /* Box.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,6 +32,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		649B3792282AFE9100D5F21B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +48,10 @@
 		649B377D2829ADA600D5F21B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		649B37882829B8E200D5F21B /* Lab1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab1; sourceTree = BUILT_PRODUCTS_DIR; };
 		649B378A2829B8E200D5F21B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		649B3794282AFE9100D5F21B /* Lab2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab2; sourceTree = BUILT_PRODUCTS_DIR; };
+		649B3796282AFE9100D5F21B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		649B379E282B126C00D5F21B /* Box.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Box.h; sourceTree = "<group>"; };
+		649B379F282B126C00D5F21B /* Box.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Box.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +69,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		649B3791282AFE9100D5F21B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -62,6 +84,7 @@
 			children = (
 				649B377C2829ADA600D5F21B /* ObjectiveC */,
 				649B37892829B8E200D5F21B /* Lab1 */,
+				649B3795282AFE9100D5F21B /* Lab2 */,
 				649B377B2829ADA600D5F21B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +94,7 @@
 			children = (
 				649B377A2829ADA600D5F21B /* ObjectiveC */,
 				649B37882829B8E200D5F21B /* Lab1 */,
+				649B3794282AFE9100D5F21B /* Lab2 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,6 +113,16 @@
 				649B378A2829B8E200D5F21B /* main.m */,
 			);
 			path = Lab1;
+			sourceTree = "<group>";
+		};
+		649B3795282AFE9100D5F21B /* Lab2 */ = {
+			isa = PBXGroup;
+			children = (
+				649B3796282AFE9100D5F21B /* main.m */,
+				649B379E282B126C00D5F21B /* Box.h */,
+				649B379F282B126C00D5F21B /* Box.m */,
+			);
+			path = Lab2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +162,23 @@
 			productReference = 649B37882829B8E200D5F21B /* Lab1 */;
 			productType = "com.apple.product-type.tool";
 		};
+		649B3793282AFE9100D5F21B /* Lab2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 649B3798282AFE9100D5F21B /* Build configuration list for PBXNativeTarget "Lab2" */;
+			buildPhases = (
+				649B3790282AFE9100D5F21B /* Sources */,
+				649B3791282AFE9100D5F21B /* Frameworks */,
+				649B3792282AFE9100D5F21B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lab2;
+			productName = Lab2;
+			productReference = 649B3794282AFE9100D5F21B /* Lab2 */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -141,6 +192,9 @@
 						CreatedOnToolsVersion = 13.3;
 					};
 					649B37872829B8E200D5F21B = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					649B3793282AFE9100D5F21B = {
 						CreatedOnToolsVersion = 13.3;
 					};
 				};
@@ -160,6 +214,7 @@
 			targets = (
 				649B37792829ADA600D5F21B /* ObjectiveC */,
 				649B37872829B8E200D5F21B /* Lab1 */,
+				649B3793282AFE9100D5F21B /* Lab2 */,
 			);
 		};
 /* End PBXProject section */
@@ -178,6 +233,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				649B378B2829B8E200D5F21B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		649B3790282AFE9100D5F21B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				649B37A0282B126C00D5F21B /* Box.m in Sources */,
+				649B3797282AFE9100D5F21B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +397,26 @@
 			};
 			name = Release;
 		};
+		649B3799282AFE9100D5F21B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N53R4WJ796;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		649B379A282AFE9100D5F21B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N53R4WJ796;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -359,6 +443,15 @@
 			buildConfigurations = (
 				649B378D2829B8E200D5F21B /* Debug */,
 				649B378E2829B8E200D5F21B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		649B3798282AFE9100D5F21B /* Build configuration list for PBXNativeTarget "Lab2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				649B3799282AFE9100D5F21B /* Debug */,
+				649B379A282AFE9100D5F21B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
