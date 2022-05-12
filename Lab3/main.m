@@ -28,7 +28,6 @@ int main(int argc, const char * argv[]) {
       } else {
         NSLog(@"Wrong!");
         [scores addWrong];
-        [scores setRight:[scores right] + 1];
       }
       [scores log];
     }
