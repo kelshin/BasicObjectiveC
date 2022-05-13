@@ -1,5 +1,5 @@
 //
-//  AdditionQuestion.h
+//  DivisionQuestion.h
 //  Lab3
 //
 //  Created by Kelbin David on 2022-05-12.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AdditionQuestion : Question
+@interface DivisionQuestion : Question
 
 - (void) generateQuestion;
 

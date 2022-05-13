@@ -2,7 +2,7 @@
 //  AdditionQuestion.m
 //  Lab3
 //
-//  Created by Kelbin David on 2022-05-11.
+//  Created by Kelbin David on 2022-05-12.
 //
 
 #import "AdditionQuestion.h"
@@ -13,12 +13,14 @@
 {
   self = [super init];
   if (self) {
-    NSInteger v1 = arc4random_uniform(100);
-    NSInteger v2 = arc4random_uniform(100);
-    _question = [NSString stringWithFormat:@"%ld + %ld ?", v1, v2];
-    _answer = v1 + v2;
+    [self generateQuestion];
   }
   return self;
+}
+- (void) generateQuestion {
+  [super setAnswer:[super leftValue] + [super rightValue]];
+  [super setQuestion:[NSString stringWithFormat:@"%ld + %ld ?", [super leftValue], [super rightValue]]];
+  NSLog(@"%ld + %ld ?", [super leftValue], [super rightValue]);
 }
 
 @end

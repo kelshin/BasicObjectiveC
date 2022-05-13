@@ -29,6 +29,7 @@
 
 - (void) log {
   CGFloat ave = (long double)_right / (long double)(_right + _wrong);
+  
   NSLog(@"Score: %ld right, %ld wrong --- %.0f%%", _right, _wrong, ave * 100 );
 }
 
