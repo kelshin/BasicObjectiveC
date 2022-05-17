@@ -13,6 +13,10 @@
 		6482C21D282EEB1F0003661C /* InputCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 6482C21C282EEB1F0003661C /* InputCollector.m */; };
 		6482C220283093C00003661C /* ContactNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 6482C21F283093BF0003661C /* ContactNumber.m */; };
 		6482C2232830A2F50003661C /* ContactNumberDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 6482C2222830A2F50003661C /* ContactNumberDetails.m */; };
+		6482C22B2832FCD20003661C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6482C22A2832FCD20003661C /* main.m */; };
+		6482C2312832FCF60003661C /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = 6482C2302832FCF60003661C /* Dice.m */; };
+		6482C2342832FFD90003661C /* InputController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6482C2332832FFD90003661C /* InputController.m */; };
+		6482C237283302D30003661C /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6482C236283302D30003661C /* GameController.m */; };
 		6484D093282C592D00D616F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6484D092282C592D00D616F8 /* main.m */; };
 		6484D099282C59C000D616F8 /* Maths.m in Sources */ = {isa = PBXBuildFile; fileRef = 6484D098282C59C000D616F8 /* Maths.m */; };
 		6484D09F282C5BD500D616F8 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 6484D09E282C5BD500D616F8 /* InputHandler.m */; };
@@ -32,6 +36,15 @@
 
 /* Begin PBXCopyFilesBuildPhase section */
 		6482C20C282EEAD60003661C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		6482C2262832FCD10003661C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -91,6 +104,14 @@
 		6482C21F283093BF0003661C /* ContactNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactNumber.m; sourceTree = "<group>"; };
 		6482C2212830A2F50003661C /* ContactNumberDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactNumberDetails.h; sourceTree = "<group>"; };
 		6482C2222830A2F50003661C /* ContactNumberDetails.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactNumberDetails.m; sourceTree = "<group>"; };
+		6482C2282832FCD10003661C /* ThreeLow */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ThreeLow; sourceTree = BUILT_PRODUCTS_DIR; };
+		6482C22A2832FCD20003661C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6482C22F2832FCF60003661C /* Dice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dice.h; sourceTree = "<group>"; };
+		6482C2302832FCF60003661C /* Dice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dice.m; sourceTree = "<group>"; };
+		6482C2322832FFD90003661C /* InputController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputController.h; sourceTree = "<group>"; };
+		6482C2332832FFD90003661C /* InputController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputController.m; sourceTree = "<group>"; };
+		6482C235283302D30003661C /* GameController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
+		6482C236283302D30003661C /* GameController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
 		6484D090282C592D00D616F8 /* Lab3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab3; sourceTree = BUILT_PRODUCTS_DIR; };
 		6484D092282C592D00D616F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6484D097282C59C000D616F8 /* Maths.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Maths.h; sourceTree = "<group>"; };
@@ -125,6 +146,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		6482C20B282EEAD60003661C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6482C2252832FCD10003661C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -180,6 +208,20 @@
 			path = Lab5;
 			sourceTree = "<group>";
 		};
+		6482C2292832FCD20003661C /* ThreeLow */ = {
+			isa = PBXGroup;
+			children = (
+				6482C22A2832FCD20003661C /* main.m */,
+				6482C22F2832FCF60003661C /* Dice.h */,
+				6482C2302832FCF60003661C /* Dice.m */,
+				6482C2322832FFD90003661C /* InputController.h */,
+				6482C2332832FFD90003661C /* InputController.m */,
+				6482C235283302D30003661C /* GameController.h */,
+				6482C236283302D30003661C /* GameController.m */,
+			);
+			path = ThreeLow;
+			sourceTree = "<group>";
+		};
 		6484D091282C592D00D616F8 /* Lab3 */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +258,7 @@
 				649B3795282AFE9100D5F21B /* Lab2 */,
 				6484D091282C592D00D616F8 /* Lab3 */,
 				6482C20F282EEAD70003661C /* Lab5 */,
+				6482C2292832FCD20003661C /* ThreeLow */,
 				649B377B2829ADA600D5F21B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -228,6 +271,7 @@
 				649B3794282AFE9100D5F21B /* Lab2 */,
 				6484D090282C592D00D616F8 /* Lab3 */,
 				6482C20E282EEAD60003661C /* Lab5 */,
+				6482C2282832FCD10003661C /* ThreeLow */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -276,6 +320,23 @@
 			name = Lab5;
 			productName = Lab5;
 			productReference = 6482C20E282EEAD60003661C /* Lab5 */;
+			productType = "com.apple.product-type.tool";
+		};
+		6482C2272832FCD10003661C /* ThreeLow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6482C22C2832FCD20003661C /* Build configuration list for PBXNativeTarget "ThreeLow" */;
+			buildPhases = (
+				6482C2242832FCD10003661C /* Sources */,
+				6482C2252832FCD10003661C /* Frameworks */,
+				6482C2262832FCD10003661C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThreeLow;
+			productName = ThreeLow;
+			productReference = 6482C2282832FCD10003661C /* ThreeLow */;
 			productType = "com.apple.product-type.tool";
 		};
 		6484D08F282C592D00D616F8 /* Lab3 */ = {
@@ -358,6 +419,9 @@
 					6482C20D282EEAD60003661C = {
 						CreatedOnToolsVersion = 13.3;
 					};
+					6482C2272832FCD10003661C = {
+						CreatedOnToolsVersion = 13.3;
+					};
 					6484D08F282C592D00D616F8 = {
 						CreatedOnToolsVersion = 13.3;
 					};
@@ -390,6 +454,7 @@
 				649B3793282AFE9100D5F21B /* Lab2 */,
 				6484D08F282C592D00D616F8 /* Lab3 */,
 				6482C20D282EEAD60003661C /* Lab5 */,
+				6482C2272832FCD10003661C /* ThreeLow */,
 			);
 		};
 /* End PBXProject section */
@@ -405,6 +470,17 @@
 				6482C21D282EEB1F0003661C /* InputCollector.m in Sources */,
 				6482C220283093C00003661C /* ContactNumber.m in Sources */,
 				6482C211282EEAD70003661C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6482C2242832FCD10003661C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6482C2312832FCF60003661C /* Dice.m in Sources */,
+				6482C237283302D30003661C /* GameController.m in Sources */,
+				6482C22B2832FCD20003661C /* main.m in Sources */,
+				6482C2342832FFD90003661C /* InputController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +541,26 @@
 			name = Debug;
 		};
 		6482C213282EEAD70003661C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N53R4WJ796;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6482C22D2832FCD20003661C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N53R4WJ796;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6482C22E2832FCD20003661C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -671,6 +767,15 @@
 			buildConfigurations = (
 				6482C212282EEAD70003661C /* Debug */,
 				6482C213282EEAD70003661C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6482C22C2832FCD20003661C /* Build configuration list for PBXNativeTarget "ThreeLow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6482C22D2832FCD20003661C /* Debug */,
+				6482C22E2832FCD20003661C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
