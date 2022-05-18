@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6404C9AA28358F53004B1690 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6404C9A928358F53004B1690 /* main.m */; };
+		6404C9B028358F7A004B1690 /* NSString+PigLatin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6404C9AF28358F7A004B1690 /* NSString+PigLatin.m */; };
+		6404C9B32835BC8B004B1690 /* InputController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6404C9B22835BC8B004B1690 /* InputController.m */; };
 		6482C211282EEAD70003661C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6482C210282EEAD70003661C /* main.m */; };
 		6482C217282EEAEF0003661C /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 6482C216282EEAEF0003661C /* Contact.m */; };
 		6482C21A282EEB050003661C /* ContactList.m in Sources */ = {isa = PBXBuildFile; fileRef = 6482C219282EEB050003661C /* ContactList.m */; };
@@ -35,6 +38,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		6404C9A528358F53004B1690 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		6482C20C282EEAD60003661C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -92,6 +104,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6404C9A728358F53004B1690 /* PigLatin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PigLatin; sourceTree = BUILT_PRODUCTS_DIR; };
+		6404C9A928358F53004B1690 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6404C9AE28358F7A004B1690 /* NSString+PigLatin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+PigLatin.h"; sourceTree = "<group>"; };
+		6404C9AF28358F7A004B1690 /* NSString+PigLatin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+PigLatin.m"; sourceTree = "<group>"; };
+		6404C9B12835BC8B004B1690 /* InputController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputController.h; sourceTree = "<group>"; };
+		6404C9B22835BC8B004B1690 /* InputController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputController.m; sourceTree = "<group>"; };
 		6482C20E282EEAD60003661C /* Lab5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab5; sourceTree = BUILT_PRODUCTS_DIR; };
 		6482C210282EEAD70003661C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6482C215282EEAEF0003661C /* Contact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
@@ -145,6 +163,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6404C9A428358F53004B1690 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6482C20B282EEAD60003661C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -190,6 +215,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6404C9A828358F53004B1690 /* PigLatin */ = {
+			isa = PBXGroup;
+			children = (
+				6404C9A928358F53004B1690 /* main.m */,
+				6404C9AE28358F7A004B1690 /* NSString+PigLatin.h */,
+				6404C9AF28358F7A004B1690 /* NSString+PigLatin.m */,
+				6404C9B12835BC8B004B1690 /* InputController.h */,
+				6404C9B22835BC8B004B1690 /* InputController.m */,
+			);
+			path = PigLatin;
+			sourceTree = "<group>";
+		};
 		6482C20F282EEAD70003661C /* Lab5 */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +296,7 @@
 				6484D091282C592D00D616F8 /* Lab3 */,
 				6482C20F282EEAD70003661C /* Lab5 */,
 				6482C2292832FCD20003661C /* ThreeLow */,
+				6404C9A828358F53004B1690 /* PigLatin */,
 				649B377B2829ADA600D5F21B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -272,6 +310,7 @@
 				6484D090282C592D00D616F8 /* Lab3 */,
 				6482C20E282EEAD60003661C /* Lab5 */,
 				6482C2282832FCD10003661C /* ThreeLow */,
+				6404C9A728358F53004B1690 /* PigLatin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -305,6 +344,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6404C9A628358F53004B1690 /* PigLatin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6404C9AD28358F53004B1690 /* Build configuration list for PBXNativeTarget "PigLatin" */;
+			buildPhases = (
+				6404C9A328358F53004B1690 /* Sources */,
+				6404C9A428358F53004B1690 /* Frameworks */,
+				6404C9A528358F53004B1690 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PigLatin;
+			productName = PigLatin;
+			productReference = 6404C9A728358F53004B1690 /* PigLatin */;
+			productType = "com.apple.product-type.tool";
+		};
 		6482C20D282EEAD60003661C /* Lab5 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6482C214282EEAD70003661C /* Build configuration list for PBXNativeTarget "Lab5" */;
@@ -416,6 +472,9 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
+					6404C9A628358F53004B1690 = {
+						CreatedOnToolsVersion = 13.3;
+					};
 					6482C20D282EEAD60003661C = {
 						CreatedOnToolsVersion = 13.3;
 					};
@@ -455,11 +514,22 @@
 				6484D08F282C592D00D616F8 /* Lab3 */,
 				6482C20D282EEAD60003661C /* Lab5 */,
 				6482C2272832FCD10003661C /* ThreeLow */,
+				6404C9A628358F53004B1690 /* PigLatin */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6404C9A328358F53004B1690 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6404C9AA28358F53004B1690 /* main.m in Sources */,
+				6404C9B028358F7A004B1690 /* NSString+PigLatin.m in Sources */,
+				6404C9B32835BC8B004B1690 /* InputController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6482C20A282EEAD60003661C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -530,6 +600,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		6404C9AB28358F53004B1690 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N53R4WJ796;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6404C9AC28358F53004B1690 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N53R4WJ796;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		6482C212282EEAD70003661C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -762,6 +852,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6404C9AD28358F53004B1690 /* Build configuration list for PBXNativeTarget "PigLatin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6404C9AB28358F53004B1690 /* Debug */,
+				6404C9AC28358F53004B1690 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6482C214282EEAD70003661C /* Build configuration list for PBXNativeTarget "Lab5" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
