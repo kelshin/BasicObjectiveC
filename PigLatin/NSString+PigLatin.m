@@ -22,4 +22,32 @@
   }
   return piglatin;
 }
+
+- (NSString *)pluralize: (NSString *) userInput {
+  
+  NSArray *wordsAndEmptyStrings = [userInput componentsSeparatedByCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+  NSLog(@"%@",wordsAndEmptyStrings);
+  
+  NSArray *clusters = @[@"Ch", @"Sh", @"Sm", @"St", @"Th", @"Ps", @"Ph", @"Pl", @"Gl"];
+  NSString *result = @"";
+  NSMutableArray *resultArr = [NSMutableArray new];
+  
+  for (NSString* word in wordsAndEmptyStrings) {
+    NSRange checkRange = NSMakeRange(0, 2);
+    NSString *string = @"";
+    string = [word substringWithRange:checkRange];
+    NSLog(@"%@", word);
+    
+    if ([clusters containsObject:string]) {
+      result = [NSString stringWithFormat:@"%@%@%@ay",[[word substringWithRange:NSMakeRange(2,3)]uppercaseString], [word substringWithRange:NSMakeRange(1, [word length] - 1)], string];
+      [resultArr addObject:result];
+    } else {
+      result = [NSString stringWithFormat:@"%@%@%@ay",[[word substringWithRange:NSMakeRange(1,2)]uppercaseString], [word substringWithRange:NSMakeRange(1, [word length])], [word substringWithRange:NSMakeRange(0, 1)]];
+      [resultArr addObject:result];
+    }
+    
+  }
+  return [resultArr componentsJoinedByString:@","];
+}
+
 @end

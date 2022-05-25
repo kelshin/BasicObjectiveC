@@ -13,7 +13,7 @@ int main(int argc, const char * argv[]) {
   @autoreleasepool {
     InputController *userInput = [[InputController alloc] init];
     NSString *s = [userInput getInput];
-    NSLog(@"%@", [s pigLatin]);
+    NSLog(@"%@", [s pluralize:s]);
   }
   return 0;
 }
